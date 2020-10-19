@@ -1,0 +1,33 @@
+p {
+	text-align: justify;
+	text-justify: inter-word;
+	text-indent: 20px;
+
+}
+
+img {
+	padding-left: 35px;
+}
+
+h1 {
+	text-align: center;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
