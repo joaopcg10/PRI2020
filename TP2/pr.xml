@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project_record xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="file:/C:/Users/joaop/Desktop/pr.xsd">
+    <bloco_de_dados>
+        
+        <titulo> Estrutura de Armazenamento e Apresentação para Relatórios Académicos e Teses de Mestrado </titulo>
+        
+        <subtitulo> MICEI 2001/2 </subtitulo>
+        
+        <begin_date> Julho 2002 </begin_date>
+        
+        <end_date> Julho 2002 </end_date>
+        
+        <supervisor url="http://www.di.uminho.pt/~jcr"> José Carlos Ramalho </supervisor>
+    </bloco_de_dados>
+    
+    <workteam>
+        
+        <elemento>
+            <nome> Eurico Alexandre Teixeira Borges </nome>
+            <numero> numero1 </numero>
+            <email url="mailto:eurico.borges@sonae.pt"> eurico.borges@sonae.pt </email>
+        </elemento>
+    
+    </workteam>
+    
+    <abstract>
+        
+        <paragrafo>
+            Quando um relatório ou uma tese têm de ser apresentados em vários formatos finais nem sempre é fácil a transformação do formato usado inicialmente no formato desejado. A utilização de <bold> XML </bold> (<link url="http://www.w3.org/XML/">http://www.w3.org/XML/</link>) como estrutura de suporte documental permite isolar esse factor. Facilmente se gera um formato de apresentação a partir de um documento devidamente estruturado em <bold>XML</bold>. Seja para <bold>HTML</bold>, <bold>PDF</bold> ou <bold>RTF</bold>, entre outros. O trabalho realizado propõe um método de estuturação de dados em XML para satisfazer as necessidades específicas de documentação em Relatórios Académicos e Teses de Mestrado. A estrutura é validada por um <bold>XML Schema</bold> (<link url="http://www.w3.org/2001/XMLSchema-instance">http://www.w3.org/2001/XMLSchema-instance</link>) e recorre ao <bold>XSLT</bold> (<link url="http://www.w3.org/1999/XSL/Transform">http://www.w3.org/1999/XSL/Transform</link>) para transformar e gerar uma apresentação em <bold>HTML</bold> a partir do ficheiro <bold>XML</bold>. Um relatório do trabalho académico de Processamento Estruturado de Documentos é apresentado como exemplo auto-demonstrativo.
+        </paragrafo>
+    
+    </abstract>
+    
+    <deliverables>
+        
+        <link url="http://www4.di.uminho.pt/~jcr/PROJS/micei2002/eurico/EBdocSchema.html">
+            XML Schema (source documentada graficamente)
+        </link>
+        
+        <link url="http://www4.di.uminho.pt/~jcr/PROJS/micei2002/eurico/EBrelatorio.xslt">
+            Style Sheet XSLT
+        </link>
+        
+        <link url="http://www4.di.uminho.pt/~jcr/PROJS/micei2002/eurico/EBrelatorio2.xml">
+            Ficheiro source XML (sem transformações)
+        </link>
+        
+        <link url="http://www4.di.uminho.pt/~jcr/PROJS/micei2002/eurico/EBrelatorio.html">
+            Apresentação HTML após transformações XSLT sobre o XML
+        </link>
+        
+    </deliverables>
+    
+</project_record>

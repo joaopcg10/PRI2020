@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="project_record">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="bloco_de_dados"/>
+        <xs:element ref="workteam"/>
+        <xs:element ref="abstract"/>
+        <xs:element ref="deliverables"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="bloco_de_dados">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="titulo"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="subtitulo"/>
+        <xs:element ref="begin_date"/>
+        <xs:element ref="end_date"/>
+        <xs:element ref="supervisor"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="titulo" type="xs:string"/>
+  <xs:element name="subtitulo" type="xs:string"/>
+  <xs:element name="begin_date" type="xs:string"/>
+  <xs:element name="end_date" type="xs:string"/>
+  <xs:element name="supervisor">
+    <xs:complexType mixed="true">
+      <xs:attributeGroup ref="attlist.supervisor"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.supervisor">
+    <xs:attribute name="url" use="required"/>
+  </xs:attributeGroup>
+  <xs:element name="workteam">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="elemento"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="elemento">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="nome"/>
+        <xs:element ref="numero"/>
+        <xs:element ref="email"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="nome" type="xs:string"/>
+  <xs:element name="numero" type="xs:string"/>
+  <xs:element name="email">
+    <xs:complexType mixed="true">
+      <xs:attributeGroup ref="attlist.email"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.email">
+    <xs:attribute name="url"/>
+  </xs:attributeGroup>
+  <xs:element name="abstract">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="paragrafo"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="paragrafo">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="bold"/>
+        <xs:element ref="italico"/>
+        <xs:element ref="sublinhado"/>
+        <xs:element ref="link"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="bold" type="xs:string"/>
+  <xs:element name="italico" type="xs:string"/>
+  <xs:element name="sublinhado" type="xs:string"/>
+  <xs:element name="deliverables">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="link"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="link">
+    <xs:complexType mixed="true">
+      <xs:attributeGroup ref="attlist.link"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.link">
+    <xs:attribute name="url" use="required"/>
+  </xs:attributeGroup>
+</xs:schema>

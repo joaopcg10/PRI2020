@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT project_record (bloco_de_dados, workteam, abstract, deliverables) >
+
+<!ELEMENT bloco_de_dados (titulo, subtitulo*, begin_date, end_date, supervisor) >
+<!ELEMENT titulo (#PCDATA) >
+<!ELEMENT subtitulo (#PCDATA) >
+<!ELEMENT begin_date (#PCDATA) >
+<!ELEMENT end_date (#PCDATA) >
+<!ELEMENT supervisor (#PCDATA) >
+<!ATTLIST supervisor 
+    url CDATA #REQUIRED
+>
+
+<!ELEMENT workteam (elemento)+ >
+<!ELEMENT elemento (nome,numero,email) >
+<!ELEMENT nome (#PCDATA) >
+<!ELEMENT numero (#PCDATA) >
+<!ELEMENT email (#PCDATA) >
+<!ATTLIST email
+    url CDATA #IMPLIED
+>
+
+<!ELEMENT abstract (paragrafo)+ >
+<!ELEMENT paragrafo (#PCDATA | bold | italico | sublinhado | link)* >
+<!ELEMENT bold (#PCDATA) >
+<!ELEMENT italico (#PCDATA) >
+<!ELEMENT sublinhado (#PCDATA) >
+
+<!ELEMENT deliverables (link)+ >
+<!ELEMENT link (#PCDATA) >
+<!ATTLIST link
+    url CDATA #REQUIRED
+>

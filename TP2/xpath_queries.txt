@@ -1,0 +1,13 @@
+Identificação de todos os arqueossitios do concelho de amares:
+	
+	/ARQSITS/ARQELEM/Amares
+	//Amares (?)
+
+Identificação de todos os arqueossitios que tenham ligação ao termo "micáceo":
+
+	/ARQSITS/ARQELEM/DESARQ/LIGA[@TERMO="micáceo"]
+	//LIGA[@TERMO="micáceo"]
+
+Identificação de todos os arqueossitios do concelho de barcelos que tenham ligação ao termo "romanização":
+
+	//LIGA[@TERMO="romanização"]
