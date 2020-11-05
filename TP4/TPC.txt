@@ -1,0 +1,11 @@
+Para ver:
+	Tratar strings em js (split match test)
+	Uso de regex em js
+
+TPC:
+	Usando o Dataset arq.xml:
+		-> Gerar pasta arqweb/ com todos os arqueossitios (arq1.html, arq2.html, ... , index.html)
+		-> Servidor node que responde a /arqs/NUM com o arqueossitio correspondente e a arqs/* com o index
+		-> Substituir todos os links no index.html por chamadas ao servidor (avançado)
+
+Instalar MongoDB
