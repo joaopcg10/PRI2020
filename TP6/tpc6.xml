@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "../../../../Desktop/PRI/Aula4/pr.dtd">
+<pr>
+    <meta>
+        <key>PRI_TPC6</key>
+        <title>Aplicação WEB para uma lista de tarefas</title>
+        <subtitle> Trabalho prático nº6 da cadeira PRI do MiEI 2020/21</subtitle>
+        <bdate>16-11-2020</bdate>
+        <edate>23-11-2020</edate>
+        <supervisor>José Carlos Ramalho</supervisor>
+    </meta>
+    
+    <workteam>
+        <worker num="a82428">
+            <name>João Pedro da Costa Gomes</name>
+            <email>a82428@alunos.uminho.pt</email>
+        </worker>
+    </workteam>
+    
+    <abstract>
+        <p>Neste trabalho foi criado um servidor com recurso a <b>Node.js</b> e <b>JSON server</b> de forma a suportar uma aplicação de gestão de tarefas. Esta aplicação permite ao utilizador: registar tarefas, visualizar lista de tarefas pendentes e terminadas, atualizar o estado de uma tarefa.</p>
+        <p>O trabalho apresentado contempla o servidor escrito em <b>JavaScript</b> e uma base de dados simples escrita em <b>JSON</b> de forma a suportar todas as funcionalidades requesitadas</p>
+    </abstract>
+    
+    <deliverables>
+        <link url="https://github.com/joaopcg10/PRI2020/blob/master/TP6/todo.js">Ficheiro do servidor</link>
+        <link url="https://github.com/joaopcg10/PRI2020/blob/master/TP6/tarefas.json">Base de dados em JSON</link>
+    </deliverables>
+</pr>
